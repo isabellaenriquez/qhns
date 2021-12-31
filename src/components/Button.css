@@ -1,0 +1,13 @@
+.qhns-button {
+  background-color: #e84f4f;
+  box-shadow: 4px 4px 0px #940000;
+  border-radius: 20px;
+  padding: 16px 32px;
+  color: white;
+}
+
+.qhns-button:hover {
+  color: #e84f4f;
+  background-color: white;
+  font-weight: normal;
+}

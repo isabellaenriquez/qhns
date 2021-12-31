@@ -1,0 +1,47 @@
+#get-involved {
+  background: url('../assets/backgrounds/get_involved_black.png') no-repeat
+    center center fixed;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  column-gap: 16px;
+}
+
+.social-media-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.social-media {
+  color: white;
+}
+
+.social-media:hover {
+  color: white;
+}
+
+#upcoming-events {
+  background-color: #f0adad;
+  color: black;
+  box-shadow: 4px 4px 0px #c07676;
+  border-radius: 20px;
+}
