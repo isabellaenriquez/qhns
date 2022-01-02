@@ -2,6 +2,8 @@ import facebookLogo from '../assets/icons/facebook.png';
 import instagramLogo from '../assets/icons/instagram.png';
 import emailLogo from '../assets/icons/email.png';
 import './getInvolved.css';
+import Button from '../components/Button';
+import qppLogo from '../assets/qpp.jpg';
 
 export default function GetInvolved() {
   return (
@@ -39,6 +41,15 @@ export default function GetInvolved() {
             <h3>Upcoming Events</h3>
             <p>Stay tuned!</p>
           </div>
+          <Button path='/get-involved/podcast'>
+            <img
+              src={qppLogo}
+              width='100%'
+              alt="Queen's Power Podcast"
+              style={{ borderRadius: '20px', border: 'solid white 1px' }}
+            ></img>
+            Click here to learn about Queen's Power Podcast!
+          </Button>
         </div>
       </div>
     </main>

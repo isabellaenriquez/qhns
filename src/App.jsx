@@ -20,20 +20,58 @@ export default function App() {
             >
               Home
             </Link>
-            <Link
-              className={useLocation().pathname === '/about' ? 'active' : ''}
-              to='/about'
-            >
-              About
-            </Link>
-            <Link
-              className={
-                useLocation().pathname === '/get-involved' ? 'active' : ''
-              }
-              to='/get-involved'
-            >
-              Get Involved
-            </Link>
+            <div className='link-group'>
+              <Link
+                className={useLocation().pathname === '/about' ? 'active' : ''}
+                to='/about'
+              >
+                About
+              </Link>
+              <div className='dropdown'>
+                <Link
+                  className={
+                    useLocation().pathname === '/about/meet-the-team'
+                      ? 'active'
+                      : ''
+                  }
+                  to='/about/meet-the-team'
+                >
+                  Meet the Team
+                </Link>
+              </div>
+            </div>
+            <div className='link-group'>
+              <Link
+                className={
+                  useLocation().pathname === '/get-involved' ? 'active' : ''
+                }
+                to='/get-involved'
+              >
+                Get Involved
+              </Link>
+              <div className='dropdown'>
+                <Link
+                  className={
+                    useLocation().pathname === '/get-involved/podcast'
+                      ? 'active'
+                      : ''
+                  }
+                  to='/get-involved/podcast'
+                >
+                  Queen's Power Podcast
+                </Link>
+                <Link
+                  className={
+                    useLocation().pathname === '/get-involved/recipes'
+                      ? 'active'
+                      : ''
+                  }
+                  to='/get-involved/recipes'
+                >
+                  Recipes
+                </Link>
+              </div>
+            </div>
           </nav>
         </div>
       </div>
@@ -41,7 +79,9 @@ export default function App() {
         <main id='home'>
           <h1>Simple, Easy, &amp; Healthy.</h1>
           <h2>Welcome to Queen's Health and Nutrition Society!</h2>
-          <Button path='/about' text='Learn More' />
+          <Button path='/about' text='Learn More'>
+            Learn More
+          </Button>
         </main>
       ) : (
         <Outlet />

@@ -41,9 +41,37 @@ a:hover {
   font-weight: bold;
 }
 
+.link-group {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: max-content;
+}
+
+.link-group:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.dropdown a {
+  float: none;
+  display: block;
+  background-color: #f0adad;
+  border: solid white 1px;
+  border-collapse: collapse;
+  margin-top: -1px;
+  padding: 8px;
+}
+
 /* pages */
 main {
-  padding: 192px 128px 128px;
+  padding: 20% 128px 128px;
   text-align: center;
   box-sizing: border-box;
   width: 100%;
@@ -74,9 +102,52 @@ h2 {
 
 h1,
 h2 {
-  margin: 0 0 30px 0;
+  margin: 64px 0;
+}
+
+#home h1 {
+  margin-bottom: 0;
+}
+
+#home h2 {
+  margin: 32px 0;
 }
 
 p {
   font-size: 18px;
+  margin: 0;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  column-gap: 16px;
+}
+
+.social-media-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 32px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.social-media {
+  color: white;
+}
+
+.social-media:hover {
+  color: white;
 }

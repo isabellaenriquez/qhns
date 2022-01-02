@@ -4,10 +4,15 @@
   border-radius: 20px;
   padding: 16px 32px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
 }
 
 .qhns-button:hover {
   color: #e84f4f;
   background-color: white;
-  font-weight: normal;
+  /* font-weight: normal; */
 }
