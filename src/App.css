@@ -69,6 +69,12 @@ a:hover {
   padding: 8px;
 }
 
+.dropdown a:hover,
+.dropdown a.active {
+  background-color: #e84f4f;
+  color: white;
+}
+
 /* pages */
 main {
   padding: 20% 128px 128px;

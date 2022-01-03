@@ -21,6 +21,10 @@ export default function About() {
         presence, we aim to inform and advocate for a nutritionally literate
         community.
       </p>
+      <p>
+        <a href='/get-involved'>Get Involved</a> by following our social media
+        and checking out some of our other initiatives!
+      </p>
     </main>
   );
 }
