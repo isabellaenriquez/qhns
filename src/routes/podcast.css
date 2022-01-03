@@ -8,12 +8,27 @@
 
 #qpp-logo {
   border-radius: 20px;
+  width: 100%;
+  height: auto;
 }
 
 #podcast-description {
-  text-align: left;
+  text-align: center;
+  margin-top: 32px;
 }
 
 #podcast-links {
-  margin-top: 64px;
+  margin-top: 32px;
+  row-gap: 32px;
+}
+
+@media screen and (min-width: 900px) {
+  #podcast-description {
+    text-align: left;
+    margin-top: 0;
+  }
+  #podcast-links {
+    margin-top: 64px;
+    row-gap: 0;
+  }
 }

@@ -6,6 +6,7 @@ import GetInvolved from './routes/getInvolved';
 import './index.css';
 import Podcast from './routes/podcast';
 import MeetTheTeam from './routes/meetTheTeam';
+import Recipes from './routes/recipes';
 
 const rootElement = document.getElementById('root');
 render(
@@ -15,10 +16,8 @@ render(
         <Route path='about' element={<About />}></Route>
         <Route path='about/meet-the-team' element={<MeetTheTeam />}></Route>
         <Route path='get-involved' element={<GetInvolved />}></Route>
-        <Route
-          path='get-involved/podcast'
-          element={<Podcast></Podcast>}
-        ></Route>
+        <Route path='get-involved/podcast' element={<Podcast />} />
+        <Route path='get-involved/recipes' element={<Recipes />} />
       </Route>
     </Routes>
   </BrowserRouter>,

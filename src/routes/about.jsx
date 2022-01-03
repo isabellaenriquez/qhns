@@ -22,8 +22,11 @@ export default function About() {
         community.
       </p>
       <p>
-        <a href='/get-involved'>Get Involved</a> by following our social media
-        and checking out some of our other initiatives!
+        <a href='/get-involved' className='inline-link'>
+          Get Involved
+        </a>{' '}
+        by following our social media and checking out some of our other
+        initiatives!
       </p>
     </main>
   );
