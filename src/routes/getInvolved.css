@@ -7,12 +7,13 @@
 }
 
 #upcoming-events {
-  background-color: #f0adad;
-  color: black;
-  box-shadow: 4px 4px 0px #c07676;
-  border-radius: 20px;
   padding: 32px 16px;
   margin-top: 32px;
+  border: solid white 1px;
+}
+
+#upcoming-events h3 {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 900px) {

@@ -5,12 +5,11 @@ export default class RecipeCard extends React.Component {
   render() {
     return (
       <a className='recipe-card col' href={this.props.link}>
-        <div className='recipe-card-img'>
-          {/* <img
-            src={require(`../assets/recipes/${this.props.imgPath}.png`)}
-            alt={this.props.title}
-          /> */}
-        </div>
+        <img
+          className='recipe-card-img'
+          src={require(`../assets/recipes/${this.props.imgPath}.png`)}
+          alt={this.props.title}
+        />
         <h3 className='recipe-title'>{this.props.title}</h3>
       </a>
     );

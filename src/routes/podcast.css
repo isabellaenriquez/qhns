@@ -8,8 +8,9 @@
 
 #qpp-logo {
   border-radius: 20px;
-  width: 100%;
+  width: 60vw;
   height: auto;
+  align-self: center;
 }
 
 #podcast-description {
@@ -30,5 +31,8 @@
   #podcast-links {
     margin-top: 64px;
     row-gap: 0;
+  }
+  #qpp-logo {
+    width: 100%;
   }
 }

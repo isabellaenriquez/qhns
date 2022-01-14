@@ -1,16 +1,26 @@
 .recipe-card {
-  background-color: white;
-  margin: 16px 0;
+  margin: 32px 64px;
   justify-content: end;
-  row-gap: 16px;
-  width: 100%;
+  row-gap: 0px;
+  width: 60vw;
 }
 
 .recipe-title {
+  background-color: white;
   padding: 16px;
+  height: 100%;
 }
 
 .recipe-card-img {
-  padding: 1px;
   width: 100%;
+  height: auto;
+  border: solid white 5px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+  .recipe-card {
+    margin: 16px 0;
+    width: 100%;
+  }
 }

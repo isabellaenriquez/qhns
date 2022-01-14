@@ -20,12 +20,14 @@ export default function App() {
       <div id='mobile-navbar' className={isNavOpen ? ' open' : ''}>
         <nav className='col'>
           <Link
+            onClick={() => setIsNavOpen(false)}
             className={useLocation().pathname === '/' ? 'active' : ''}
             to='/'
           >
             Home
           </Link>
           <Link
+            onClick={() => setIsNavOpen(false)}
             className={useLocation().pathname === '/about' ? 'active' : ''}
             to='/about'
           >
@@ -33,6 +35,7 @@ export default function App() {
           </Link>
           <div className='mobile-dropdown col'>
             <Link
+              onClick={() => setIsNavOpen(false)}
               className={
                 useLocation().pathname === '/about/meet-the-team'
                   ? 'active'
@@ -44,6 +47,7 @@ export default function App() {
             </Link>
           </div>
           <Link
+            onClick={() => setIsNavOpen(false)}
             className={
               useLocation().pathname === '/get-involved' ? 'active' : ''
             }
@@ -53,6 +57,7 @@ export default function App() {
           </Link>
           <div className='mobile-dropdown col'>
             <Link
+              onClick={() => setIsNavOpen(false)}
               className={
                 useLocation().pathname === '/get-involved/podcast'
                   ? 'active'
@@ -63,6 +68,7 @@ export default function App() {
               Queen's Power Podcast
             </Link>
             <Link
+              onClick={() => setIsNavOpen(false)}
               className={
                 useLocation().pathname === '/get-involved/recipes'
                   ? 'active'
