@@ -1,6 +1,7 @@
 #meet-the-team {
   background: url('../assets/backgrounds/about_black.png') no-repeat center
     center fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;

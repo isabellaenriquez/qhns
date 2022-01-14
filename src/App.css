@@ -135,6 +135,7 @@ main {
 #home {
   background: url('./assets/backgrounds/home_black.png') no-repeat center center
     fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
